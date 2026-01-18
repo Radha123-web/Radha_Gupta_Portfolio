@@ -1,4 +1,4 @@
-export const DOMAIN_URL = "https://www.austinserb.com"
+export const DOMAIN_URL = "https://radha-gupta-portfolio-etkk.vercel.app"
 
 export const SITE_CONFIG = {
   title: "Radha Gupta - Mern Stack  Developer| Portfolio ",
