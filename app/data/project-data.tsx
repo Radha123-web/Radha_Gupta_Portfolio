@@ -14,7 +14,6 @@ import heroBeforeIao from "@/public/assets/iron-and-oak-before-website-design.jp
 import heroBeforeMobileIao from "@/public/assets/iron-and-oak-before-website-design-mobile.jpg"
 import userinterfaceImage from "@/public/assets/userinterface.png"
 import { ApproachTabsImage } from "../components/ProjectSection/ApproachTabsImage"
-import { PDFViewer } from "../components/PDFViewer/PDFViewer"
 
 //   interface ProjectData {
 //   hero: {
