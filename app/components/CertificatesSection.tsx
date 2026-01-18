@@ -46,7 +46,7 @@ const certificates = [
     name: "Certification of Cloud Computing",
     issuer: "Nptel IIT Kharagpur",
     date: " 10/11/2024",
-    image: "/certificates/CloudComputing.png"
+    image: "/certificates/cloudComputing.png"
   }
 ]
 
