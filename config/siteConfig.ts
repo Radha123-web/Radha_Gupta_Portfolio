@@ -40,7 +40,7 @@ export const SITE_SLUGS = {
   home: "/",
   projects: "/projects",
   contact: "/#contact",
-  about: "/#about-Radha Gupta",
+  about: "/#about",
   projectLinks: {
     tastyTrail: "https://github.com/Radha123-web/swiggy_project",
     blogApp: "https://github.com/Radha123-web/blog-app",
