@@ -29,7 +29,7 @@ export const SITE_NAP = {
     facebook: "https://www.facebook.com/serbytedevelopment/",
     linkedIn: "https://www.linkedin.com/in/radha-gupta-7500482a8/",
     github: "https://github.com/Radha123-web/",
-    // x: "https://x.com/AustinSerb",
+    
   } as const,
   logo: "/serbyte-logo.png",
   favicon: "/favicon.ico",
@@ -44,7 +44,8 @@ export const SITE_SLUGS = {
   projectLinks: {
     tastyTrail: "https://github.com/Radha123-web/swiggy_project",
     blogApp: "https://github.com/Radha123-web/blog-app",
-    
+    iao: "https://iao-seattle.vercel.app/?src=serbyte",
+    myproblems: "/projects/myproblems",
   },
 } as const
 
@@ -54,7 +55,7 @@ export const externalLinks = {
   jobspider: "https://jobspider-frontend.vercel.app/",
   Restromanage: "https://github.com/Radha123-web/foodprojectbackend-",
   AtomicPay: "https://github.com/Radha123-web/paytmMonorepo", 
-  Chroma: "https://vetschoice.com/", 
+  Chroma: "https://github.com/Radha123-web/", 
 } as const
 
 const flattenSlugs = (obj: Record<string, string | Record<string, string>>): string[] => {

@@ -1,0 +1,43 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bg)"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">MyProblems.com - Deployment Architecture</text>
+  
+  <!-- Frontend Layer -->
+  <rect x="200" y="60" width="200" height="40" rx="10" fill="#48bb78"/>
+  <text x="300" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Frontend UI (HTML/CSS/JS)</text>
+  
+  <!-- Arrow 1 -->
+  <polygon points="290,110 300,130 310,110" fill="white"/>
+  
+  <!-- Backend Layer -->
+  <rect x="200" y="140" width="200" height="40" rx="10" fill="#ed8936"/>
+  <text x="300" y="165" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Node.js + Express.js API</text>
+  
+  <!-- Arrow 2 -->
+  <polygon points="290,190 300,210 310,190" fill="white"/>
+  
+  <!-- Database Layer -->
+  <rect x="200" y="220" width="200" height="40" rx="10" fill="#9f7aea"/>
+  <text x="300" y="245" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">MongoDB Atlas Database</text>
+  
+  <!-- Arrow 3 -->
+  <polygon points="290,270 300,290 310,270" fill="white"/>
+  
+  <!-- Cloud Layer -->
+  <rect x="200" y="300" width="200" height="40" rx="10" fill="#38b2ac"/>
+  <text x="300" y="325" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Render.com Cloud Hosting</text>
+  
+  <!-- Tech Stack -->
+  <text x="50" y="370" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Tech Stack:</text>
+  <text x="130" y="370" fill="white" font-family="Arial, sans-serif" font-size="11">JWT Auth • Cloudinary • RESTful API • Responsive Design</text>
+</svg>

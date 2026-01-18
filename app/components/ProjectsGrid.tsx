@@ -153,10 +153,10 @@ export function ProjectsGrid({ className }: { className?: string }) {
 
   
   const OFFSET_TUNING: Record<string, HeroOffset> = {
-    jobspider: { rot: 6, dx: 0, dy: -10, s: 1 },
-    tallybuddy: { rot: -6, dx: 0, dy: -10, s: 1 },
-    cinenova: { rot: 6, dx: 0, dy: -10, s: 1 },
-    atomicpay: { rot: 6, dx: 0, dy: -10, s: 1 },
+    jobspider: { x: 0, y: 0, rot: 6, dx: 0, dy: -10, s: 1 },
+    tallybuddy: { x: 0, y: 0, rot: -6, dx: 0, dy: -10, s: 1 },
+    cinenova: { x: 0, y: 0, rot: 6, dx: 0, dy: -10, s: 1 },
+    atomicpay: { x: 0, y: 0, rot: 6, dx: 0, dy: -10, s: 1 },
   }
 
   const offsets = Object.fromEntries(
@@ -167,8 +167,8 @@ export function ProjectsGrid({ className }: { className?: string }) {
       return [
         id,
         {
-          x: (base?.x ?? 0) + t.dx,
-          y: (base?.y ?? 0) + t.dy,
+          x: (base?.x ?? 0) + (t.dx ?? 0),
+          y: (base?.y ?? 0) + (t.dy ?? 0),
           rot: t.rot,
           s: t.s,
         },

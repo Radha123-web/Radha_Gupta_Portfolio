@@ -12,7 +12,9 @@ import { LineChart } from "../components/ProjectSection/LineChart"
 import { REVIEW_MAP, type ReviewProps } from "./review-data"
 import heroBeforeIao from "@/public/assets/iron-and-oak-before-website-design.jpg"
 import heroBeforeMobileIao from "@/public/assets/iron-and-oak-before-website-design-mobile.jpg"
+import userinterfaceImage from "@/public/assets/userinterface.png"
 import { ApproachTabsImage } from "../components/ProjectSection/ApproachTabsImage"
+import { PDFViewer } from "../components/PDFViewer/PDFViewer"
 
 //   interface ProjectData {
 //   hero: {
@@ -60,6 +62,7 @@ export type ProjectData = {
     beforeAltText: string
     beforeMobileAltText: string
     afterAltText: string
+    hideHeader?: boolean
   }
   results: AnalyticCardProps[]
   phases: Phase[]
@@ -426,4 +429,141 @@ export const iao: ProjectData = {
     },
   ],
   review: REVIEW_MAP.iao,
+}
+
+export const myProblems: ProjectData = {
+  hero: {
+    title: "MyProblems.Com - Civic Complaint Management Platform",
+    client: "Madhav Institute of Technology & Science",
+    year: "2024",
+    description: (
+      <>
+        A revolutionary digital platform bridging the gap between residents and municipal officials for infrastructure complaints. 
+        Built with <span className="font-semibold">Node.js, Express.js, and MongoDB</span>, this full-stack application streamlines 
+        civic issue reporting with real-time tracking, multimedia uploads, and automated workflow management.
+      </>
+    ),
+    categories: ["Node.js", "Express.js", "MongoDB", "Full-Stack Development", "Civic Tech"],
+    link: "#", // No live link since it's a college project
+  },
+  slug: "myproblems",
+  beforeAfter: {
+    heroBefore: userinterfaceImage,
+    heroBeforeMobile: userinterfaceImage,
+    beforeAltText: "MyProblems.Com User Interface Design",
+    beforeMobileAltText: "MyProblems.Com UI Mobile View",
+    afterAltText: "MyProblems.Com Case Study",
+    hideHeader: true,
+  },
+  results: [
+    {
+      title: "System Efficiency",
+      description: "Streamlined complaint processing workflow",
+      percentageIncrease: 85,
+      chart: <TrafficBarChart startValue={20} endValue={170} />,
+      dataSource: "Based on system testing metrics",
+    },
+    {
+      title: "User Experience",
+      description: "Improved accessibility and ease of use",
+      percentageIncrease: 90,
+      chart: <RadialProgressRing percentage={90} />,
+      dataSource: "User testing feedback analysis",
+    },
+    {
+      title: "Response Time",
+      description: "Faster issue resolution tracking",
+      percentageIncrease: 75,
+      chart: <LineChart />,
+      dataSource: "Compared to traditional methods",
+    },
+  ],
+  phases: [
+    {
+      id: 1,
+      title: "System Analysis",
+      subtitle: "Understanding the Problem",
+      description: "Conducted comprehensive feasibility studies including economic, technical, and behavioral analysis to ensure project viability.",
+      details: [
+        "Economic feasibility analysis with cost-benefit breakdown",
+        "Technical requirements assessment for Node.js stack",
+        "Behavioral study through community surveys and stakeholder interviews",
+        "Competitive analysis of existing civic platforms",
+      ],
+      icon: "/assets/search-black.webp",
+      feature: <ApproachTabsImage src="/assets/system-analysis.png" alt="System Analysis Diagram" />,
+    },
+    {
+      id: 2,
+      title: "Full-Stack Development",
+      subtitle: "Node.js, Express.js & MongoDB Implementation",
+      description: "Built a robust backend API with Express.js and MongoDB Atlas, featuring secure authentication, file uploads, and real-time updates.",
+      details: [
+        "RESTful API development with Express.js",
+        "MongoDB Atlas cloud database integration",
+        "JWT-based authentication and authorization",
+        "Cloudinary integration for image uploads",
+        "Real-time notifications system",
+      ],
+      icon: "/assets/tool-black.webp",
+      feature: <ApproachTabsImage src="/assets/fullstackdevelopment.png" alt="Database Architecture" />,
+    },
+    {
+      id: 3,
+      title: "User Interface Design",
+      subtitle: "Responsive & Accessible Frontend",
+      description: "Created an intuitive, responsive interface using HTML5 and CSS3 with focus on accessibility and user experience.",
+      details: [
+        "Mobile-first responsive design approach",
+        "Accessibility compliance (WCAG guidelines)",
+        "Intuitive complaint submission workflow",
+        "Real-time status tracking dashboard",
+        "Multi-role user interface (Citizens & Officials)",
+      ],
+      icon: "/assets/design-black.webp",
+      feature: <ApproachTabsImage src="/assets/userinterface.png" alt="UI Design Mockups" />,
+    },
+    {
+      id: 4,
+      title: "Testing & Quality Assurance",
+      subtitle: "Comprehensive Testing Strategy",
+      description: "Implemented thorough testing protocols including unit testing, integration testing, and validation testing to ensure system reliability.",
+      details: [
+        "Unit testing for individual components",
+        "Integration testing for system workflows",
+        "User acceptance testing with stakeholders",
+        "Security testing and vulnerability assessment",
+        "Performance testing under load conditions",
+      ],
+      icon: "/assets/notepad-black.webp",
+      feature: <ApproachTabsImage src="/assets/testing.png" alt="Testing Documentation" />,
+    },
+    {
+      id: 5,
+      title: "Deployment & Documentation",
+      subtitle: "Cloud Deployment & Project Documentation",
+      description: "Successfully deployed the application on Render.com with comprehensive documentation and future enhancement roadmap.",
+      details: [
+        "Cloud deployment on Render.com platform",
+        "MongoDB Atlas database hosting",
+        "Comprehensive technical documentation",
+        "User manual and admin guide creation",
+        "Future scope planning for mobile app development",
+      ],
+      icon: "/assets/assets-black-camera.webp",
+      feature: <ApproachTabsImage src="/assets/myproblems-deployment-simple.svg" alt="MyProblems.com Deployment Architecture" />,
+    },
+  ],
+  review: {
+    quote: (
+      <>
+        "This project demonstrates excellent full-stack development skills and addresses a real-world civic problem. 
+        The comprehensive approach from system analysis to deployment shows strong engineering fundamentals and 
+        practical application of modern web technologies."
+      </>
+    ),
+    name: "Dr. R.S. Jadon",
+    title: "Professor, Computer Science & Engineering",
+    img: "/client-photos/bespoke-tint-owner-kris-256.webp", // Placeholder - you can add mentor's photo
+  },
 }

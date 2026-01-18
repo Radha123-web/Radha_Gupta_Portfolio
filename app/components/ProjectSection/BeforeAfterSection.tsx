@@ -19,6 +19,7 @@ interface BeforeAfterSectionProps {
   iframe?: string
   heroAfter?: StaticImageData
   afterAltText: string
+  hideHeader?: boolean
 }
 
 export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
@@ -29,38 +30,63 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
   beforeAltText,
   beforeMobileAltText,
   afterAltText,
+  hideHeader = false,
 }) => {
   return (
     <section className="relative border-y border-gray-200">
       <div className="inside-container-large flex flex-col gap-12 pt-12 lg:pt-16">
-        <HeaderText
-          title="Before and after."
-          titleHighlight="See the difference."
-          description="Use the slider to see the difference between the before and after."
-        />
-        <BeforeAfterSlider
-          initialPosition={70}
-          before={
-            <>
-              <Image src={heroBefore} alt={beforeAltText} fill className="hidden rounded-xl object-cover object-top lg:block" priority sizes="80vw" />
-              <Image
-                src={heroBeforeMobile}
-                alt={beforeMobileAltText}
-                fill
-                className="block rounded-xl object-cover object-top lg:hidden"
-                priority
-                sizes="80vw"
-              />
-            </>
-          }
-          after={
-            iframe ? (
-              <iframe title="Bespoke Hero After" src={iframe} className="h-full w-full rounded-xl border-0 bg-white" scrolling="no" loading="lazy" />
-            ) : (
-              heroAfter && <Image src={heroAfter} alt={afterAltText} fill className="rounded-xl object-cover object-top" priority sizes="80vw" />
-            )
-          }
-        />
+        {!hideHeader && (
+          <HeaderText
+            title="Before and after."
+            titleHighlight="See the difference."
+            description="Use the slider to see the difference between the before and after."
+          />
+        )}
+        {hideHeader ? (
+          // Simple image display without slider functionality
+          <div className="relative aspect-video w-full overflow-hidden rounded-xl">
+            <Image 
+              src={heroBefore} 
+              alt={beforeAltText} 
+              fill 
+              className="hidden rounded-xl object-cover object-top lg:block" 
+              priority 
+              sizes="80vw" 
+            />
+            <Image
+              src={heroBeforeMobile}
+              alt={beforeMobileAltText}
+              fill
+              className="block rounded-xl object-cover object-top lg:hidden"
+              priority
+              sizes="80vw"
+            />
+          </div>
+        ) : (
+          <BeforeAfterSlider
+            initialPosition={70}
+            before={
+              <>
+                <Image src={heroBefore} alt={beforeAltText} fill className="hidden rounded-xl object-cover object-top lg:block" priority sizes="80vw" />
+                <Image
+                  src={heroBeforeMobile}
+                  alt={beforeMobileAltText}
+                  fill
+                  className="block rounded-xl object-cover object-top lg:hidden"
+                  priority
+                  sizes="80vw"
+                />
+              </>
+            }
+            after={
+              iframe ? (
+                <iframe title="Bespoke Hero After" src={iframe} className="h-full w-full rounded-xl border-0 bg-white" scrolling="no" loading="lazy" />
+              ) : (
+                heroAfter && <Image src={heroAfter} alt={afterAltText} fill className="rounded-xl object-cover object-top" priority sizes="80vw" />
+              )
+            }
+          />
+        )}
       </div>
     </section>
   )

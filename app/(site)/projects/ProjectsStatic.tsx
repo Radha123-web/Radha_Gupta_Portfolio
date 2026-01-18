@@ -6,6 +6,7 @@ import PaytmPreview from "@/app/images/paytm.png"
 import TrendoraPreview from "@/app/images/Chroma.png"
 import RestroManagePreview from "@/app/images/haldiram.png"
 import BlogAppPreview from "@/app/images/blog.png"
+import myProblemsPreview from "@/app/images/myproblems.png"
 import jobSpiderPreview from "@/app/images/jobSpider.png"
 import tallybuddyPreview from "@/app/images/tallybuddy.png"
 import { Link } from "@/app/utils/Link"
@@ -87,6 +88,19 @@ export const STATIC_PROJECTS: StaticProject[] = [
     href: SITE_SLUGS.projectLinks.blogApp,
     dataText: "View On github",
     ariaLabel: "View BlogApp on github",
+    isExternal: false,
+  },
+
+  {
+    id: "MyProblems",
+    src: myProblemsPreview,
+    alt: "MyProblems.Com Preview",
+    color: "#059669",
+    type: "Civic Complaint Management Platform",
+    text: "View Case Study",
+    href: SITE_SLUGS.projectLinks.myproblems,
+    dataText: "View Case Study",
+    ariaLabel: "View MyProblems.Com Case Study",
     isExternal: false,
   },
 

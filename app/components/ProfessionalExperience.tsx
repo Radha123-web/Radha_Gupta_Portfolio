@@ -14,13 +14,7 @@ const experienceData = [
     duration: "Feb 2025 - May 2025",
     location: "On-site"
   },
-  {
-    position: "Software Developer Engineer",
-    company: "Numeric Infosystem Pvt ltd", 
-    type: "Internship",
-    duration: "Present",
-    location: "On-site"
-  },
+ 
   {
     position: "Software Developer Engineer",
     company: "Freelance",
