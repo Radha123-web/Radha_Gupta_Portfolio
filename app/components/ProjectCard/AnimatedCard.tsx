@@ -39,7 +39,7 @@ export function AnimatedCard({ src, alt, offset, color, type, gridId, progress, 
       target={href ? "_blank" : undefined}
       href={href ?? `${SITE_SLUGS.projects}/${gridId}`}
       data-grid-id={gridId}
-      className="reveal-false:pointer-events-none"
+      className="reveal-false:pointer-events-none block w-full aspect-[4/3]"
     >
       <div
         ref={ref}

@@ -8,20 +8,26 @@ import { MotionDiv } from "../utils/lazy-ui"
 
 const experienceData = [
   {
+    position: "Software Engineer Intern",
+    company: "Replacie.ai",
+    type: "Internship",
+    duration: "Mar 2026 - Jun 2026 · 4 mos",
+    location: "Bangalore · Remote"
+  },
+  {
+    position: "Junior Software Engineer",
+    company: "Numeric Infosystem Pvt. Ltd.",
+    type: "Full Time",
+    duration: "Jun 2025 - Feb 2026 · 9 mos",
+    location: "Gwalior, Madhya Pradesh · On-site"
+  },
+  {
     position: "Software Developer",
     company: "SHASHANK SOLUTION",
     type: "Internship",
     duration: "Feb 2025 - May 2025",
     location: "On-site"
   },
- 
-  {
-    position: "Software Developer Engineer",
-    company: "Freelance",
-    type: "Full Time", 
-    duration: "Aug 2025 -Nov 2025",
-    location: "On-site"
-  }
 ]
 
 const leftVariant: Variants = {
@@ -148,7 +154,7 @@ export const ProfessionalExperience: React.FC = ({ className = "" }: { className
               <button
                 onClick={() => {
                   const link = document.createElement('a');
-                  link.href = '/resume.pdf';
+                  link.href = '/resume.pdf.pdf';
                   link.download = 'Radha_Gupta_Resume.pdf';
                   link.target = '_blank';
                   document.body.appendChild(link);

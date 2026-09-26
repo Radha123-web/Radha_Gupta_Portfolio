@@ -39,7 +39,7 @@ export const Card = ({
             {text}
           </span>
         </span>
-        <Image className="h-full w-full bg-gray-200" src={src} alt={alt} priority decoding="async" />
+        <Image className="h-full w-full bg-gray-200 object-cover" src={src} alt={alt} priority decoding="async" />
       </div>
     </div>
   )

@@ -9,6 +9,11 @@ import BlogAppPreview from "@/app/images/blog.png"
 import myProblemsPreview from "@/app/images/myproblems.png"
 import jobSpiderPreview from "@/app/images/jobSpider.png"
 import tallybuddyPreview from "@/app/images/tallybuddy.png"
+import agentPreview from "@/app/images/ai-assistant.png"
+import tubeAIPreview from "@/app/images/youtube.png"
+import blogCreationPreview from "@/app/images/myblog.png"
+import reaserchPreview from "@/app/images/reaserch.png"
+import shayakPreview from "@/app/images/shayak.jpeg"
 import { Link } from "@/app/utils/Link"
 import { externalLinks, SITE_SLUGS } from "@/config/siteConfig"
 
@@ -142,6 +147,66 @@ export const STATIC_PROJECTS: StaticProject[] = [
     href: externalLinks.Chroma,
     dataText: "View On Github",
     ariaLabel: "View Trendora Website",
+    isExternal: true,
+  },
+  {
+    id: "Relay",
+    src: agentPreview,
+    color: "#6366F1",
+    alt: "Relay Preview",
+    type: "Intelligent AI Agent",
+    text: "View On Github",
+    href: "https://github.com/Radha123-web/langchain-agent",
+    dataText: "View On Github",
+    ariaLabel: "View Relay on Github",
+    isExternal: true,
+  },
+  {
+    id: "TubeTalk",
+    src: tubeAIPreview,
+    color: "#FF0000",
+    alt: "TubeTalk AI Preview",
+    type: "TubeTalk AI",
+    text: "View On Github",
+    href: "https://github.com/Radha123-web/youtube-rag",
+    dataText: "View On Github",
+    ariaLabel: "View TubeTalk AI on Github",
+    isExternal: true,
+  },
+  {
+    id: "BlogAgent",
+    src: blogCreationPreview,
+    color: "#0EA5E9",
+    alt: "Autonomous AI Research & Content Agent Preview",
+    type: "Autonomous AI Research & Content Agent",
+    text: "View On Github",
+    href: "https://github.com/Radha123-web/blog-writing-agent",
+    dataText: "View On Github",
+    ariaLabel: "View Blog Writing Agent on Github",
+    isExternal: true,
+  },
+  {
+    id: "PromptCraft",
+    src: reaserchPreview,
+    color: "#7C3AED",
+    alt: "PromptCraft AI Preview",
+    type: "PromptCraft AI – Research Paper Explainer",
+    text: "View On Github",
+    href: "https://github.com/Radha123-web/langchain-models/blob/main/Prompt/prompt_ui.py",
+    dataText: "View On Github",
+    ariaLabel: "View PromptCraft AI on Github",
+    isExternal: true,
+  },
+  {
+    id: "Sahayak",
+    src: shayakPreview,
+    color: "#10B981",
+    alt: "Sahayak Preview",
+    type: "Sahayak – Intelligent AI Assistant",
+    text: "View On Github",
+    href: "https://github.com/Radha123-web/Shayak",
+    dataText: "View On Github",
+    ariaLabel: "View Sahayak on Github",
     isExternal: true,
   },
 ]

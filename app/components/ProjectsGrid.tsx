@@ -126,8 +126,8 @@
 import { AnimatedCard, HeroOffset } from "./ProjectCard/AnimatedCard"
 import jobSpiderPreview from "@/app/images/jobSpider.png"
 import tallybuddyPreview from "@/app/images/tallybuddy.png"
-import CineNovaPreview from "@/app/images/cineNova.png"
-import PaytmPreview from "@/app/images/paytm.png"
+import shayakPreview from "@/app/images/shayak.jpeg"
+import youtubePreview from "@/app/images/youtube.png"
 import clsx from "clsx"
 import { useOffset } from "../hooks/useOffset"
 import { useRef, useEffect } from "react"
@@ -135,7 +135,7 @@ import { useScroll, useSpring } from "motion/react"
 import { useUI } from "@react-zero-ui/core"
 import { externalLinks } from "@/config/siteConfig"
 
-const ids = ["jobspider", "tallybuddy", "cinenova", "atomicpay"]
+const ids = ["tallybuddy", "sahayak", "ragchatbot", "jobspider"]
 
 export function ProjectsGrid({ className }: { className?: string }) {
   const ref = useRef<HTMLDivElement>(null)
@@ -153,10 +153,10 @@ export function ProjectsGrid({ className }: { className?: string }) {
 
   
   const OFFSET_TUNING: Record<string, HeroOffset> = {
-    jobspider: { x: 0, y: 0, rot: 6, dx: 0, dy: -10, s: 1 },
-    tallybuddy: { x: 0, y: 0, rot: -6, dx: 0, dy: -10, s: 1 },
-    cinenova: { x: 0, y: 0, rot: 6, dx: 0, dy: -10, s: 1 },
-    atomicpay: { x: 0, y: 0, rot: 6, dx: 0, dy: -10, s: 1 },
+    tallybuddy: { x: 0, y: 0, rot: 6,  dx: 0, dy: -10, s: 1 },
+    sahayak:    { x: 0, y: 0, rot: -6, dx: 0, dy: -10, s: 1 },
+    ragchatbot: { x: 0, y: 0, rot: 6,  dx: 0, dy: -10, s: 1 },
+    jobspider:  { x: 0, y: 0, rot: -6, dx: 0, dy: -10, s: 1 },
   }
 
   const offsets = Object.fromEntries(
@@ -189,33 +189,8 @@ export function ProjectsGrid({ className }: { className?: string }) {
       ref={ref}
       className={clsx("relative scroll-mt-36", className)}
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <AnimatedCard
-          src={jobSpiderPreview}
-          alt="JobSpider Preview"
-          offset={offsets.jobspider}
-          gridId="jobspider"
-          color="#000000"
-          type="Job Portal Web Application"
-          progress={progress}
-          href={externalLinks.jobspider}
-          dataText="View Live"
-        />
-
-      
-
-        <AnimatedCard
-          src={CineNovaPreview}
-          alt="CineNova Preview"
-          offset={offsets.cinenova}
-          gridId="cinenova"
-          color="#090979"
-          type="AI-Based Movie Recommendation Platform"
-          progress={progress}
-          href={externalLinks.CineNova}
-          dataText="View on GitHub"
-        />
-          <AnimatedCard
           src={tallybuddyPreview}
           alt="TallyBuddy Preview"
           offset={offsets.tallybuddy}
@@ -226,17 +201,38 @@ export function ProjectsGrid({ className }: { className?: string }) {
           href={externalLinks.tallybuddy}
           dataText="View Website"
         />
-
         <AnimatedCard
-          src={PaytmPreview}
-          alt="AtomicPay Preview"
-          offset={offsets.atomicpay}
-          gridId="atomicpay"
-          color="#3B06D1A5"
-          type="Modern P2P Digital Wallet System"
+          src={shayakPreview}
+          alt="Sahayak Preview"
+          offset={offsets.sahayak}
+          gridId="sahayak"
+          color="#10B981"
+          type="Sahayak – Intelligent AI Assistant"
           progress={progress}
-          href={externalLinks.AtomicPay}
+          href="https://github.com/Radha123-web/Shayak"
           dataText="View on GitHub"
+        />
+        <AnimatedCard
+          src={youtubePreview}
+          alt="TubeTalk AI Preview"
+          offset={offsets.ragchatbot}
+          gridId="ragchatbot"
+          color="#FF0000"
+          type="TubeTalk AI – RAG Chatbot"
+          progress={progress}
+          href="https://github.com/Radha123-web/youtube-rag"
+          dataText="View on GitHub"
+        />
+        <AnimatedCard
+          src={jobSpiderPreview}
+          alt="JobSpider Preview"
+          offset={offsets.jobspider}
+          gridId="jobspider"
+          color="#000000"
+          type="Job Portal Web Application"
+          progress={progress}
+          href={externalLinks.jobspider}
+          dataText="View Live"
         />
       </div>
     </section>

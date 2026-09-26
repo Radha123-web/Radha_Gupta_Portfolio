@@ -10,33 +10,42 @@ import { MotionUl, MotionLi } from "../utils/lazy-ui"
 
 const certificates = [
   {
+    name: "Software Engineer Intern",
+    issuer: "Replaice.ai",
+    date: "23/3/2026 - 22/6/2026",
+    image: "/certificates/replaice.png"
+  },
+  {
+    name: "C Programming Certification",
+    issuer: "PS Softech Education Services",
+    date: "2/2/2026",
+    image: "/certificates/psSoftech.png"
+  },
+  {
     name: "Software Developer",
     issuer: "SHASHANK SOLUTION",
     date: "15/5/2025",
     image: "/certificates/shashank.png"
   },
-{
+  {
     name: "Web Development Intern ",
     issuer: "Cognifyz Technologies",
     date: " 4/2/2025",
     image: "/certificates/Cognifyz.png"
   },
-
   {
     name: "CERTIFICATE OF COMPETENCY",
     issuer: "NVIDIA DEEP LEARNING INSTITUTE",
     date: " 11/2/2024",
     image: "/certificates/Nivida.png"
   },
-
-   {
+  {
     name: "Web Development Internship",
     issuer: "ZIDIO DEVELOPMENT",
     date: " 9/2/2025",
     image: "/certificates/zidio.png"
-  }
-  ,
-   {
+  },
+  {
     name: "Certification of Participation",
     issuer: "LOREAL SUSTAINABLE CHALLENGE",
     date: " 1/5/2024",
