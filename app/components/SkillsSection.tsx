@@ -133,7 +133,10 @@ const CircularProgress = ({ name, level, color, icon, delay }: { name: string; l
   }, [level, delay, isVisible])
 
   return (
-    <div ref={ref} className="flex flex-col items-center group">
+     <div
+    ref={ref}
+   className="flex flex-col items-center group rounded-2xl bg-white border border-gray-200 p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-2"
+  >
       <div className="relative w-32 h-32 mb-3">
         {/* Background circle */}
         <svg className="transform -rotate-90 w-32 h-32">
@@ -167,8 +170,14 @@ const CircularProgress = ({ name, level, color, icon, delay }: { name: string; l
 
 export const SkillsSection: React.FC = ({ className = "" }: { className?: string }) => {
   return (
-    <section id="skills" className={clsx("inside-container relative z-2 py-20 md:py-28 bg-white border-y border-gray-200", className)}>
-      <div className="relative z-10">
+<section
+  id="skills"
+  className={clsx(
+    "inside-container relative z-2 py-20 md:py-28  border-y border-gray-200",
+    className
+  )}
+>
+  <div className="relative z-10">
         <div className="flex flex-col items-center text-center mb-16">
           <AnimatedH2 className="mb-4">
             Technical <br />
@@ -212,7 +221,7 @@ export const SkillsSection: React.FC = ({ className = "" }: { className?: string
               <MotionDiv
                 key={category.title}
                 variants={itemVariants}
-                className="group relative bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden"
+ className="group relative rounded-2xl p-6 bg-white border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden"
               >
                 {/* Gradient background on hover */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
@@ -252,6 +261,7 @@ export const SkillsSection: React.FC = ({ className = "" }: { className?: string
           </MotionDiv>
         </div>
       </div>
+     
     </section>
   )
 }

@@ -80,7 +80,13 @@ const itemVariants: Variants = {
 
 export const GitHubStats: React.FC = ({ className = "" }: { className?: string }) => {
   return (
-    <section id="github" className={clsx("inside-container relative z-2 py-20 md:py-28 bg-white border-y border-gray-200", className)}>
+<section
+  id="github"
+  className={clsx(
+    "inside-container relative z-2 py-20 md:py-28  border-y border-gray-200",
+    className
+  )}
+>
       <div className="flex flex-col items-center text-center">
         <AnimatedH2 className="mb-4">
           GitHub <br />
