@@ -27,6 +27,12 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https" as const,
+        hostname: "streak-stats.demolab.com",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
   
