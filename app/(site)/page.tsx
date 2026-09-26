@@ -2,6 +2,8 @@ import { HeroV2 } from "../components/HeroV2"
 import { ProjectsSection } from "../components/ProjectsSection"
 import { AboutSectionV2 } from "../components/AboutSectionV2"
 import { ServicesSectionV2 } from "../components/ServicesSectionV2"
+import { SkillsSection } from "../components/SkillsSection"
+import { GitHubStats } from "../components/GitHubStats"
 import { ProfessionalExperience } from "../components/ProfessionalExperience"
 import { CertificatesSection } from "../components/CertificatesSection"
 import { RecruiterContact } from "../components/RecruiterContact"
@@ -48,6 +50,8 @@ const PortfolioPage: React.FC = () => {
       <div className="border-b border-gray-200" />
       <ProjectsSection />
       <AboutSectionV2 />
+      <SkillsSection />
+      <GitHubStats />
       <ServicesSectionV2 />
       <ProfessionalExperience />
       <CertificatesSection />

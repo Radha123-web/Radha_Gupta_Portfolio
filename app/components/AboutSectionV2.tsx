@@ -34,26 +34,35 @@ export const AboutSectionV2 = ({ className = "" }: { className?: string }) => {
               <Text as="h2" size="lg" className="font-medium">
                 Radha Gupta
               </Text>
-              <p className="text-sm text-gray-500">Full-Stack Developer. Mern Stack </p>
+              <p className="text-sm text-gray-500">Full-Stack Developer | MERN Stack | GenAI</p>
             </MotionDiv>
           </div>
           {/* ---------------- right column ---------------- */}
-          <Typography as="article" size="lg" className="[flex:1.5_0_0px] space-y-8 text-slate-500">
-    <p>
-  <strong className="font-semibold text-slate-900">
-    Hi, I’m Radha Gupta
-  </strong>{" "}
-  ,  I believe good software is built at the intersection of logic, design, and intention.
+          <Typography as="article" size="lg" className="[flex:1.5_0_0px] space-y-6 text-slate-500">
+            <p>
+              <strong className="font-semibold text-slate-900">
+                I build products that work — and know why.
+              </strong>{" "}
+              Full-stack developer (MERN) with growing expertise in GenAI applications. I take features from idea to production — 
+              from architecting a RAG-based chatbot with DeepSeek and Gemini LLM workflows, to building Opportura, a full-stack 
+              job portal handling 1000+ listings across 4 user roles. Understanding the reasoning behind a solution matters to me 
+              as much as shipping it.
+            </p>
 
-I build scalable and engaging digital experiences using modern web technologies, with a strong focus on clean, meaningful code.
+            <p>
+              Currently deepening my GenAI engineering skills — building agentic workflows with LangGraph and exploring how 
+              multiple AI agents can coordinate on real tasks.
+            </p>
 
-Outside of development, I enjoy playing badminton, singing, and exploring palm reading, which keep me creative and curious beyond the screen.
-</p>
+            <p>
+              <strong className="font-semibold text-slate-900">Open to:</strong> Full Stack Developer | MERN Stack Developer | 
+              Junior AI Engineer roles where I can grow, contribute, and ship real impact.
+            </p>
 
-
-
-
-
+            <p>
+              <strong className="font-semibold text-slate-900">Beyond code:</strong> Singing, gaming, and pattern recognition — 
+              in code or tarot cards. Curiosity transcends domains.
+            </p>
 
             {/* signature */}
             <Image src={signature} alt="Radha Gupta" className="relative mt-6 -ml-3 h-12 w-auto" />

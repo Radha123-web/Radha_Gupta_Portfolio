@@ -15,6 +15,18 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https" as const,
+        hostname: "github-readme-stats.vercel.app",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https" as const,
+        hostname: "github-readme-streak-stats.herokuapp.com",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
   
